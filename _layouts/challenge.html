@@ -1,0 +1,56 @@
+{% include header.html %}
+  <div class="row body about-challenge">
+    <div class="col-xs-12">
+      <div class="image">
+        <img src="{{ page.image }}" alt="Header image for {{ page.title }}"/>
+      </div>
+    </div>
+    <div class="challenge-sidebar hidden-xs hidden-sm col-md-3">
+      <h3>{{ page.title }}</h3>
+      {% if page.references %}
+      <h4>References</h4>
+      <ul>
+        {% for reference in page.references %}
+        <li>
+          <a href="{{ reference.url }}">
+            {{ reference.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    <div class="description col-xs-9">
+      {{ page.content }}
+    </div>
+  </div>
+  <div class="gallery row solution-grid">
+  {% for solution in page.solutions %}
+    <div class="col-xs-12 col-md-3">
+      <a href="{{ solution.url }}" class="image">
+        <img
+         src="{{ solution.image | default: "/assets/blank.png" }}"
+         alt="Solution by {{ solution.author }}"
+        />
+      </a>
+      <div class="title">
+        <strong>{{ solution.author }}</strong>
+        <a href="{{ solution.url }}">Go to solution</a>
+      </div>
+      {{ solution.description }}
+    </div>
+    <div class="gap hidden-xs hidden-sm col-md-1"></div>
+  {% endfor %}
+    <div class="contribute col-xs-12 col-md-3">
+      <h4><strong>Add Your Own!</strong></h4>
+      Add your own solution by making a pull request on
+      <a href="{{ site.github.repository_url }}/pulls">github</a>! Not sure
+      how to use github? Check out Daniel Shiffman's great tutorial series
+      <a href=
+      "https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV"
+      >
+       Github for Poets
+      </a>
+    </div>
+  </div>
+{% include footer.html %}

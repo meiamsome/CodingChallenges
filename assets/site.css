@@ -1,0 +1,61 @@
+body {
+  background: #2494C1;
+}
+
+.header {
+  background: #FFF;
+}
+
+h1 a {
+  color: #333;
+}
+
+h1 a:hover {
+  color: #666;
+  text-decoration: none;
+}
+
+.body{
+  background: #fff;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.about-challenge .description {
+  padding-top: 20px;
+}
+
+.gallery {
+  padding-bottom: 50px;
+}
+
+.gallery > div {
+  background: #fff;
+  padding-bottom: 10px;
+}
+
+.gallery > .gap {
+  background: none;
+}
+
+.gallery .contribute {
+  padding-top: 10px;
+}
+
+.image {
+  display: block;
+  margin: 0 -15px;
+  background: #ccc;
+}
+
+.image img {
+  width: 100%;
+}
+
+.gallery .title {
+  text-align: center;
+}
+
+.gallery .title strong {
+  font-size: 1.5em;
+}

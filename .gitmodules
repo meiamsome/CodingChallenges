@@ -1,0 +1,3 @@
+[submodule "whirl/solutions/meiamsome"]
+	path = whirl/solutions/meiamsome
+	url = https://github.com/meiamsome/p5js-whirl.git

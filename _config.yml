@@ -1,0 +1,14 @@
+
+repository: meiamsome/coding-challenges
+title: Coding Challenges
+
+collections:
+  challenges:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: challenges
+    values:
+      layout: challenge
