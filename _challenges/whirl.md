@@ -1,12 +1,12 @@
 ---
 title: Whirl
-image: /assets/whirl-hexagon.png
+image: https://meiamsome.github.io/p5js-whirl/whirl-hexagon.png
 references:
   - url: http://mathworld.wolfram.com/Whirl.html
     name: Wolfram MathWorld
 solutions:
   - author: meiamsome
-    image: /assets/whirl-hexagon.png
+    image: https://meiamsome.github.io/p5js-whirl/whirl-hexagon.png
     url: https://meiamsome.github.io/p5js-whirl/
     github: https://github.com/meiamsome/p5js-whirl/
     description: A short description about your experience with the challenge

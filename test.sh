@@ -1,7 +1,8 @@
 #!/bin/sh
 set -e
 
-bundle exec jekyll build
+rm -rf _site/
+bundle exec jekyll build -d _site/coding-challenges/
 
 # Check line lengths
 (! grep  --exclude-dir='.*' --exclude-dir='_site' -rI '.\{81\}' *)

@@ -1,6 +1,7 @@
 
 repository: meiamsome/coding-challenges
 title: Coding Challenges
+baseurl: /coding-challenges
 
 collections:
   challenges:

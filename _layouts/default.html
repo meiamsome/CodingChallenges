@@ -7,7 +7,7 @@
   <div class="gallery row">
     {% for challenge in site.challenges %}
     <div class="col-xs-12 col-md-3">
-      <a href="{{ challenge.url }}" class="image">
+      <a href="{{ site.baseurl }}{{ challenge.url }}" class="image">
         <img
          src="{{ challenge.image | default: "/assets/blank.png" }}"
          alt="{{ challenge.title }} header image"
@@ -15,7 +15,7 @@
       </a>
       <div class="title">
         <strong>{{ challenge.title }}</strong>
-        <a href="{{ challenge.url }}">Go to challenge</a>
+        <a href="{{ site.baseurl }}{{ challenge.url }}">Go to challenge</a>
       </div>
       {{ challenge.content | markdownify | truncatewords: 20 }}
     </div>

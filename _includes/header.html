@@ -8,15 +8,19 @@
      integrity=
       "sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
      crossorigin="anonymous">
-    <link href="{{ "/assets/site.css" | baseurl }}" rel="stylesheet">
+    <link
+     href="{{ "/assets/site.css" | prepend: site.baseurl }}"
+     rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="header">
       <div class="container">
         <h1>
-          <a href="/">{{ site.title }}</a>
-          <small>/ <a href="{{ page.url }}">{{ page.title }}</a></small>
+          <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+          <small>/
+            <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+          </small>
         </h1>
       </div>
     </div>

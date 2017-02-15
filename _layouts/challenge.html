@@ -38,6 +38,11 @@
         <a href="{{ solution.url }}">Go to solution</a>
       </div>
       {{ solution.description }}
+      {% if solution.github %}
+      <a class="github" href="{{ solution.github }}">
+        View on Github
+      </a>
+      {% endif %}
     </div>
     <div class="gap hidden-xs hidden-sm col-md-1"></div>
   {% endfor %}
