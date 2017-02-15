@@ -6,7 +6,7 @@
   </div>
   <div class="gallery row">
     {% for challenge in site.challenges %}
-    <div class="col-xs-12 col-md-3">
+    <div class="col-xs-12 col-md-offset-1 col-md-3">
       <a href="{{ site.baseurl }}{{ challenge.url }}" class="image">
         <img
          src="{{ challenge.image | default: "/assets/blank.png" }}"
@@ -19,7 +19,6 @@
       </div>
       {{ challenge.content | markdownify | truncatewords: 20 }}
     </div>
-    <div class="gap hidden-xs hidden-sm col-md-1"></div>
     {% endfor %}
   </div>
 {% include footer.html %}

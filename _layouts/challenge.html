@@ -26,7 +26,7 @@
   </div>
   <div class="gallery row solution-grid">
   {% for solution in page.solutions %}
-    <div class="col-xs-12 col-md-3">
+    <div class="col-xs-12 col-md-offset-1 col-md-3">
       <a href="{{ solution.url }}" class="image">
         <img
          src="{{ solution.image | default: "/assets/blank.png" }}"
@@ -44,9 +44,8 @@
       </a>
       {% endif %}
     </div>
-    <div class="gap hidden-xs hidden-sm col-md-1"></div>
   {% endfor %}
-    <div class="contribute col-xs-12 col-md-3">
+    <div class="contribute col-xs-12 col-md-offset-1 col-md-3">
       <h4><strong>Add Your Own!</strong></h4>
       Add your own solution by making a pull request on
       <a href="{{ site.github.repository_url }}/pulls">github</a>! Not sure
