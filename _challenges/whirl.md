@@ -18,6 +18,12 @@ solutions:
 blob/master/docs/whirl.html"
     description: The law of sines is used to find the side length of
      the new polygon.
+  - author: cmanny
+    image: https://cmanny.github.io/p5js-whirl/img/vis.png
+    url: https://cmanny.github.io/p5js-whirl/
+    github: https://github.com/cmanny/p5js-whirl
+    description: I extended meiamsome's solution into a new visualisation,
+     which uses iterated point evaluation using cosines.
 ---
 A Whirl is a mathematical shape created from regular polygons by iteratively
 cloning the last shape, shrinking it and rotating it until the corners touch
