@@ -14,8 +14,10 @@ solutions:
   - author: kwichmann
     image: https://kwichmann.github.io/school_of_meiamsome/pics/whirl.png
     url: https://kwichmann.github.io/school_of_meiamsome/whirl.html
-    github: https://github.com/kwichmann/school_of_meiamsome/blob/master/docs/whirl.html
-    description: The law of sines is used to find the side length of the new polygon.
+    github: "https://github.com/kwichmann/school_of_meiamsome/\
+blob/master/docs/whirl.html"
+    description: The law of sines is used to find the side length of
+     the new polygon.
 ---
 A Whirl is a mathematical shape created from regular polygons by iteratively
 cloning the last shape, shrinking it and rotating it until the corners touch
